@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./searchbox.css"
 
 const SearchBox = ({ onSearch }) => {
   const [location, setLocation] = useState('');
@@ -21,7 +22,7 @@ const SearchBox = ({ onSearch }) => {
         value={location}
         onChange={handleChange}
       />
-      <button type="submit">Search</button>
+      <button type="submit" className='search'>Search</button>
     </form>
   );
 };
